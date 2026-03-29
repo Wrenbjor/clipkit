@@ -30,6 +30,7 @@ return new class extends Migration
             $table->index('user_id');
             $table->index('status');
             $table->index('youtube_id');
+            $table->fullText('captions');
         });
     }
 
